@@ -1,5 +1,5 @@
 import React from 'react';
-import { CategoryCard, Footer, ProductCard, Slider, Review } from "./partials";
+import { CategoryCard, ProductCard, Slider, Review } from "./partials";
 
 
 const Home = () => {
@@ -19,7 +19,6 @@ const Home = () => {
                     <Review/>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 };

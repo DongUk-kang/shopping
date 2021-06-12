@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import './App.css'
-import {Navbar} from "./components/partials";
+import {Footer, Navbar} from "./components/partials";
 import Home from "./components/Home";
 import Product from "./components/Product";
 import ProductDetail from "./components/ProductDetail";
@@ -22,6 +22,7 @@ const App = () => {
                  <Route path={'/signup'} exact component={Signup} />
                  <Redirect from={'*'} to={'/'} />
              </Switch>
+             <Footer />
          </Router>
         </div>
     );

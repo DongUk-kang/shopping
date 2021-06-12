@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import './index.css'
+import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -17,13 +18,13 @@ const Navbar = () => {
                     <div className={'collapse navbar-collapse'} id={'navbarNav'}>
                         <ul className={'navbar-nav ml-lg-auto'}>
                             <li className={'nav-item active'}>
-                                <a className={'nav-link'} href={'#'}>Home <span className={'sr-only'}>(current)</span></a>
+                                <Link className={'nav-link'} to={'/'}>Home <span className={'sr-only'}>(current)</span></Link>
                             </li>
                             <li className={'nav-item'}>
-                                <a className={'nav-link'} href={'#'}>Features </a>
+                                <Link className={'nav-link'} to={'/'}>Features </Link>
                             </li>
                             <li className={'nav-item'}>
-                                <a className={'nav-link'} href={'#'}>Pricing</a>
+                                <Link className={'nav-link'} to={'/'}>Pricing</Link>
                             </li>
                         </ul>
                     </div>
