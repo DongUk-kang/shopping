@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import "./index.css"
+import './index.css'
 
 const Navbar = () => {
     return (
@@ -9,8 +9,10 @@ const Navbar = () => {
                     <a className={'navbar-brand'} href={'#'}>
                       NavBar
                     </a>
-                    <button className={'navbar-toggler'} type={'button'} data-toggle={'collapse'} data-target={'#navbarNav'} aria-controls={'navbarNav'} aria-expanded={'false'} aria-label={'Toggle navigation'}>
-                        <span style={{ color:'white' }} className={'navbar-toggler-icon'}></span>
+                    <button className="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className={'collapse navbar-collapse'} id={'navbarNav'}>
                         <ul className={'navbar-nav ml-lg-auto'}>
