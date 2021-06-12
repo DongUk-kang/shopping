@@ -8,7 +8,7 @@ const Navbar = () => {
             <nav className="navbar navbar-expand-lg topbar">
                 <div className="container">
                     <Link style={{fontSize: "30px"}} class="navbar-brand" to="/"><span
-                        className="logo">dong</span><strong>uk</strong></Link>
+                        className="logo">Hay</span><strong>roo</strong></Link>
                     <button className="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -82,6 +82,11 @@ const Navbar = () => {
                             <li>
                                 <Link className="nav-item btn btn-light" to="/signup">
                                     Signup
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="nav-item btn btn-light" to="/admin/dashboard">
+                                    Admin
                                 </Link>
                             </li>
                         </ul>

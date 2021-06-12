@@ -13,13 +13,13 @@ const App = () => {
         <div className={'App'}>
          <Router>
              <Navbar />
-
              <Switch>
                  <Route  path={'/'} exact component={Home} />
                  <Route  path={'/product'} exact component={Product} />
                  <Route  path={'/product/details'} exact component={ProductDetail} />
-                <Route path={'/signin'} exact component={Signin} />
+                 <Route path={'/signin'} exact component={Signin} />
                  <Route path={'/signup'} exact component={Signup} />
+                 <Route path={'/admin/dashboad'} exact component={Signin} />
                  <Redirect from={'*'} to={'/'} />
              </Switch>
              <Footer />
