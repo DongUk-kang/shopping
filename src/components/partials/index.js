@@ -5,6 +5,7 @@ import ProductCard from "./ProductCard";
 import CategoryCard from "./CategoryCard";
 import Review from "./Review";
 import Subcategory from "./Subcategory";
+import Submenu from "./Submenu";
 
 export {
     Navbar,
@@ -13,5 +14,6 @@ export {
     ProductCard,
     CategoryCard,
     Review,
-    Subcategory
+    Subcategory,
+    Submenu
 }
