@@ -1,11 +1,28 @@
 import React from 'react';
-import Main from "./components";
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import './App.css'
+import {Navbar} from "./components/partials";
+import Home from "./components/Home";
+import Product from "./components/Product";
+import ProductDetail from "./components/ProductDetail";
+import Signin from "./components/Signin";
+import Signup from "./components/Signup";
 
 const App = () => {
     return (
         <div className={'App'}>
-          <Main />
+         <Router>
+             <Navbar />
+
+             <Switch>
+                 <Route  path={'/'} exact component={Home} />
+                 <Route  path={'/product'} exact component={Product} />
+                 <Route  path={'/product/details'} exact component={ProductDetail} />
+                <Route path={'/signin'} exact component={Signin} />
+                 <Route path={'/signup'} exact component={Signup} />
+                 <Redirect from={'*'} to={'/'} />
+             </Switch>
+         </Router>
         </div>
     );
 };
