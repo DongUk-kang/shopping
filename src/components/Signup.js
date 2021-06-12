@@ -34,8 +34,8 @@ const Signup = () => {
                             <input type="confirmPassword" className="form-control" name="confirmPassword"
                                    id="confirmPassword"/>
                         </div>
-                        <button type="button" className="btn btn-primary btn-block mb-1">SIGNUP NOW</button>
-                        <Link to="/singin"> Have account? Singin here </Link>
+                        <button type="button" className="btn btn-primary btn-block mb-1 customBtn">SIGNUP NOW</button>
+                        <Link to="/singin" className={'linkTag'}> Have account? Singin here </Link>
                     </form>
                 </div>
             </div>

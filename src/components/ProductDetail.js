@@ -20,7 +20,7 @@ const ProductDetail = () => {
                         </div>
                         <div>Short Descriptions</div>
                         <div>
-                            <button type="button" className="btn btn-primary btn-block shadow">Add to cart</button>
+                            <button type="button" className="btn btn-primary btn-block customBtn customshadow">Add to cart</button>
                         </div>
                     </div>
                 </div>
@@ -28,10 +28,13 @@ const ProductDetail = () => {
                     <div className="col-md-6 mb-3">
                         <form action="">
                             <label htmlFor="reviewBody">Your Review</label>
-                            <textarea className="form-control" name="reviewBody"
-                                      placeholder="Type something about the product..." id="reviewBody" cols="5"
-                                      rows="3"></textarea>
-                            <button className="btn btn-sm btn-dark mt-3">Submit</button>
+                            <textarea
+                                className="form-control" name="reviewBody"
+                                placeholder="Type something about the product..." id="reviewBody" cols="5"
+                                rows="3"
+                            />
+
+                            <button className="btn btn-sm btn-dark mt-3 customBtn customshadow">Submit</button>
                         </form>
                     </div>
                     <div className="col-md-6 mb-3">
